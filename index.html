@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .style {
+        background-color: rgb(255, 145, 0);
+        color: azure;
+      }
+      .align{
+    padding-right: 330px;
+    padding-left: 370px;
+    border-radius: 7px;
+      }
+    .span{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding-top: 2px;
+    }
+    .mar{
+      margin-left: -30px;
+    }
+    </style>
+
+    <title>Random</title>
+  </head>
+
+  <body>
+    <span id="alert"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-3 text-center style">
+          <h1 class="mr-5">Guess the number</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mt-3">
+          <ol class="mr-5 h5 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Enter the number between 1 to 7</ol>
+          <ol class="mr-5 h5 text-center" style="margin-left: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Enter number 4 times</ol>
+        </div>
+      </div>
+      <div class="input-group">
+        <input type="text" class="form-control text-center" id="take-digit" placeholder="Type Digit Here">
+        <div class="input-group-append">
+            <button class="btn btn-dark" onclick="handleBtn()" id="guess-btn">Submit</button>
+        </div>
+      </div>  
+    </div>
+    <div class="container span">
+      <span class="mb-10" id="load-page"></span>
+    </div>
+    <div class="container">
+      <h2 class="text-center">Score</h2>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h5>Correct answer guessed</h5>
+            <h6 id="right-score">0</h6>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated text-center" id="correct-progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+            <ul class="mt-4 mar" id="result-list-right"></ul>
+          </div>
+          <div class="col text-center">
+            <h5>Wrong answer guessed</h5>
+            <h6 id="wrong-score">0</h6>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" id="wrong-progress" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <ul class="mt-4 mar" id="result-list-wrong"></ul>
+          </div>
+        </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
